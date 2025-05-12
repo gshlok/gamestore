@@ -2,7 +2,7 @@ import React from 'react'
 
 function Card({imglink, name, cost, onAddToCart, inCart, inLibrary}) {
   return (
-    <div className="bg-gray-50 rounded-lg shadow-md p-4 transition-transform hover:scale-105 hover:shadow-xl flex flex-col items-center">
+    <div className="bg-gray-100 rounded-lg shadow-md p-4 transition-transform hover:scale-105 hover:shadow-xl flex flex-col items-center">
       <img src={imglink} alt={name} className="w-64 h-40 object-cover rounded mb-4"/>
       <h2 className="text-lg font-semibold mb-2 text-center">{name}</h2>
       <h6 className=" mb-4 text-center">{cost}</h6>
