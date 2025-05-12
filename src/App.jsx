@@ -60,11 +60,11 @@ function App() {
         <Sidebar />
         <div className='col-span-3 md:ml-[20vw] p-2'>
           <Routes>
-            <Route index element={<Home products={products} addToCart={addToCart} cartItems={cartItems} libraryItems={libraryItems}/>} />
+            <Route path="/" element={<Home products={products} addToCart={addToCart} cartItems={cartItems} libraryItems={libraryItems}/>} />
+            <Route path="/home" element={<Home products={products} addToCart={addToCart} cartItems={cartItems} libraryItems={libraryItems}/>} />
             <Route path="/cart" element={<Cart cartItems={cartItems} removeFromCart={removeFromCart} orderGames={orderGames} libraryItems={libraryItems}/>} />
             <Route path="/library" element={<Library libraryItems={libraryItems}/>} />
             <Route path="/login" element={<Login />} />
-            <Route path="/home" element={<Home products={products} addToCart={addToCart} cartItems={cartItems} libraryItems={libraryItems}/>} />
             <Route path="*" element={<h1>404 Not Found</h1>} />
           </Routes>
         </div>
